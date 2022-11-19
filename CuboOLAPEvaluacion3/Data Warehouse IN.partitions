@@ -1,0 +1,85 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="dcaa5277-c593-4436-a439-810ecdda1890" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Data Warehouse IN</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>Producto DW</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="5150574b-8f53-4dbd-aaf4-f6a39662d2c9">
+          <ID>Producto DW</ID>
+          <Name>Producto DW</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="fe5c5849-8734-41c7-b44e-7778479c9033">
+            <DataSourceViewID>Data Warehouse IN</DataSourceViewID>
+            <TableID>dbo_ProductoDW</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Sub Cat Categoria DW</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="0b005fac-5cd3-4469-8226-f8e8db645343">
+          <ID>Sub Cat Categoria DW</ID>
+          <Name>Sub Cat Categoria DW</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="91c16597-0f73-4513-b19b-93a20b9c2c36">
+            <DataSourceViewID>Data Warehouse IN</DataSourceViewID>
+            <TableID>dbo_SubCatCategoriaDW</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Tienda Geografia DW</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="98f8fa2b-95b1-4abc-bed3-0a84ea316698">
+          <ID>Tienda Geografia DW</ID>
+          <Name>Tienda Geografia DW</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="07af5243-412d-4d44-82bd-262650fd41c0">
+            <DataSourceViewID>Data Warehouse IN</DataSourceViewID>
+            <TableID>dbo_TiendaGeografiaDW</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Venta Canal DW</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="6b37e67d-901d-4bb9-bd91-171b24e4db87">
+          <ID>Venta Canal DW</ID>
+          <Name>Venta Canal DW</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="7c36560f-89fa-457f-b8a5-f3ccde447603">
+            <DataSourceViewID>Data Warehouse IN</DataSourceViewID>
+            <TableID>dbo_VentaCanalDW</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>

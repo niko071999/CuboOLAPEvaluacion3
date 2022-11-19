@@ -1,0 +1,221 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="bd109d52-d367-4485-bd7d-9b9708ebec32" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Venta Canal DW</ID>
+  <Name>Venta Canal DW</Name>
+  <CreatedTimestamp>0001-01-01T03:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T03:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-4525" scrolltop="-5252" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="12091" y="14499" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="VentaCanalDW" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="3995" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b00009b0f0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_VentaCanalDW" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-4525</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-5252</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T03:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="787c545b-62c6-4c18-8960-d08620c55786">
+    <DataSourceViewID>Data Warehouse IN</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="3c658887-200e-4637-b1c0-4890315c17f6">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="9e52fb0c-3bb3-44ff-8c76-f6beb8fcf832">
+      <ID>Sales Key</ID>
+      <Name>Sales Key</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5ade8cb7-af1f-486a-b6aa-2332b2714175">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="67a1c327-724c-4474-99c4-93457edbb251">
+            <TableID>dbo_VentaCanalDW</TableID>
+            <ColumnID>SalesKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="269126ba-9fc0-4603-a758-5cee3814e692">
+          <AttributeID>Store Key</AttributeID>
+          <Name>Store Key</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="8074f2f1-2e73-4152-a4b3-1488a89cacc2">
+          <AttributeID>Product Key</AttributeID>
+          <Name>Product Key</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="539b38bb-b59f-4f03-94d7-017a27a78495">
+          <AttributeID>Date Key</AttributeID>
+          <Name>Date Key</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="55413387-bf5b-4776-8aea-1def2bc54ac2">
+          <AttributeID>Total Cost</AttributeID>
+          <Name>Total Cost</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ad0c39ff-ae45-494e-b7a0-74dc45c23cf5">
+          <AttributeID>Sales Quantity</AttributeID>
+          <Name>Sales Quantity</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d0a55f5b-c5b0-49f3-8eb1-a4f2e87b51cf">
+          <AttributeID>Channel Name</AttributeID>
+          <Name>Channel Name</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="82e8464c-e444-47c9-ae58-37862d8b8bbc">
+      <ID>Store Key</ID>
+      <Name>Store Key</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4c1e97b6-6389-4de5-9bd7-ebcde2e23c27">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="876c021c-891e-4238-a4fc-d1348c2eaa4d">
+            <TableID>dbo_VentaCanalDW</TableID>
+            <ColumnID>StoreKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b86f3dc8-38b4-4c2f-a0fd-0c3c725a6664">
+      <ID>Product Key</ID>
+      <Name>Product Key</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="65c19c68-8a14-4349-bafc-87ea2b85c14c">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="df76efa4-9767-4f4c-b6e2-92be8e6f995e">
+            <TableID>dbo_VentaCanalDW</TableID>
+            <ColumnID>ProductKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="592dd6af-715e-4e3b-940f-10a611320edb">
+      <ID>Date Key</ID>
+      <Name>Date Key</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="806301d1-cdb7-40a1-b4c9-f2fc80484247">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="63b6fa97-50a0-4c3d-92cb-4b916935aa0d">
+            <TableID>dbo_VentaCanalDW</TableID>
+            <ColumnID>DateKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e57e1cc2-0626-484c-a737-37018889a15d">
+      <ID>Total Cost</ID>
+      <Name>Total Cost</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="93b596f7-3c7b-4379-9383-0387bfe47cf4">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="bda62136-7706-4e22-951b-b321e75348dc">
+            <TableID>dbo_VentaCanalDW</TableID>
+            <ColumnID>TotalCost</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ce21a0f7-8f44-4e8a-8bcc-82c171b37194">
+      <ID>Sales Quantity</ID>
+      <Name>Sales Quantity</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b5489b17-012a-480e-883b-504487e28105">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5fa0c180-83bb-4056-a6fc-247ce9cf8665">
+            <TableID>dbo_VentaCanalDW</TableID>
+            <ColumnID>SalesQuantity</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e5d9a492-e18a-4d03-a04c-55ae4f096fcb">
+      <ID>Channel Name</ID>
+      <Name>Channel Name</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="20a6e666-d237-484f-9a04-f4d902f022ac">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="93c77040-17bf-4dc4-aacc-25061650c8f7">
+            <TableID>dbo_VentaCanalDW</TableID>
+            <ColumnID>ChannelName</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>
